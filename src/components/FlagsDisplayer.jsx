@@ -1,5 +1,12 @@
 const FlagsDisplayer = ({ data }) => {
-  return <div></div>;
+  return (
+    <div>
+      <button onClick={() => console.log(data)}>flag</button>
+      {/* {data.map((flag) => {
+          
+      })} */}
+    </div>
+  );
 };
 
 export default FlagsDisplayer;

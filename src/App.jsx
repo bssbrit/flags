@@ -1,3 +1,4 @@
+import FlagsDisplayer from "./components/FlagsDisplayer";
 import "./App.css";
 import { useState, useEffect } from "react";
 function App() {
@@ -32,6 +33,8 @@ function App() {
         <div>
           <h1>Data:</h1>
           <button onClick={() => console.log(fetchedData)}>Data</button>
+
+          <FlagsDisplayer data={fetchedData} />
         </div>
       )}
     </div>
